@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context="com.example.android.iasitour.PlaceInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/text_padding">
+
+        <ImageView
+            android:id="@+id/detailed_image"
+            style="@style/ImageStyle"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center_horizontal"
+            tools:src="@drawable/main" />
+
+        <TextView
+            android:id="@+id/detailed_name"
+            style="@style/BigTextStyle"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/list_marginLeft"
+            android:textAlignment="center"
+             />
+
+        <TextView
+            android:id="@+id/detailed_address"
+            style="@style/TextStyle"
+            android:layout_marginTop="0dp"
+
+            />
+
+        <TextView
+            android:id="@+id/detailed_desc"
+            style="@style/TextStyle"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_marginLeft">
+
+            <LinearLayout
+                android:id="@+id/link_webpage"
+                style="@style/IconStyle">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/webpage"
+                    android:background="@color/blue"
+                    android:textColor="@color/white"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/link_map"
+                style="@style/IconStyle">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/map"
+                    android:background="@color/blue"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
